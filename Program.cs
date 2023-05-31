@@ -41,14 +41,24 @@
 // }
 
 // // EXERCISE FOUR: Build a collection of these numbers sorted in ascending order
-    List<int> numbers = new List<int>()
-        {
-            15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
-        };
+    // List<int> numbers = new List<int>()
+    //     {
+    //         15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+    //     };
 
-    List<int> AscendingOrderList = numbers.OrderBy(n => n).ToList();
+    // List<int> AscendingOrderList = numbers.OrderBy(n => n).ToList();
 
-    foreach (int num in AscendingOrderList)
-    {
-        Console.WriteLine(num);
-    }
+    // foreach (int num in AscendingOrderList)
+    // {
+    //     Console.WriteLine(num);
+    // }
+
+// EXERCISE 5: Output how many numbers are in this list
+List<int> numbers = new List<int>()
+{
+    15, 8, 21, 24, 32, 13, 30, 12, 7, 54, 48, 4, 49, 96
+};
+
+int HowManyNumbers = numbers.Count(); //only int at the beginning because you're not making a list, just want the an integer
+
+Console.WriteLine(HowManyNumbers);
